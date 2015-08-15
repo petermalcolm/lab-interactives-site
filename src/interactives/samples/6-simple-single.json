@@ -3,8 +3,8 @@
   "publicationStatus": "sample",
   "subtitle": "A simple model of a single atom",
   "about": [
-    "It turns out that atoms behave a lot like superballs, and we can, in fact, model an atom by just changing some of the parameters.
-Because atoms move so quickly and are so small, the model has been modified so time is slowed down a billion times (otherwise we would just see a blur of motion), and we have to magnify our view by a billion times as well (or the atoms would be too small to see). "
+    "It turns out that atoms behave a lot like superballs, and we can, in fact, model an atom by just changing some of the parameters.",
+"Because atoms move so quickly and are so small, the model has been modified so time is slowed down a billion times (otherwise we would just see a blur of motion), and we have to magnify our view by a billion times as well (or the atoms would be too small to see). "
   ],
   "models": [
     {
