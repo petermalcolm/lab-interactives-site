@@ -10,7 +10,7 @@ Because atoms move so quickly and are so small, the model has been modified so t
     {
       "type": "md2d",
       "id": "simple_single",
-      "url": "interactives/samples/6M-simple-single.json",
+      "url": "models-converted/atom-superball/6M-simple-single.json",
       "viewOptions" : {
         "controlButtons": "play_reset",
         "textBoxes": []
