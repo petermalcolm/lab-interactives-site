@@ -1,0 +1,25 @@
+{
+  "title": "Oil and Water Redux",
+  "publicationStatus": "sample",
+  "subtitle": "Reducing the oil model to a single atom",
+  "about": [
+    "It turns out that atoms behave a lot like superballs, and we can, in fact, model an atom by just changing some of the parameters.",
+"Because atoms move so quickly and are so small, the model has been modified so time is slowed down a billion times (otherwise we would just see a blur of motion), and we have to magnify our view by a billion times as well (or the atoms would be too small to see). "
+  ],
+  "models": [
+    {
+      "type": "md2d",
+      "id": "7M-oil-water-redux",
+      "_not_url": "models-converted/atom-superball/6M-simple-single.json",
+      "_not_url": "models-converted/lab-version/1/md2d/sam-activities/intermolecular-attraction/original-interactives-in-pages/page3/page3$1.json",
+      "url": "models-converted/lab-version/1/md2d/sam-activities/intermolecular-attraction/original-interactives-in-pages/page3/7M-oil-water-redux.json",
+      "viewOptions" : {
+        "controlButtons": "play_reset",
+        "textBoxes": []
+      }
+    }
+  ],
+  "components": [],
+  "layout" : {},
+  "i18nMetadata": ""
+}
