@@ -1,25 +1,106 @@
 {
   "title": "Atom Superball",
   "publicationStatus": "sample",
+  "labEnvironment": "production",
   "subtitle": "A simple model of a single atom",
+  "category": "",
+  "subCategory": "",
+  "screenshot": "",
+  "aspectRatio": 1.3,
+  "fontScale": 1,
+  "lang": "en-US",
+  "i18nMetadata": "",
+  "helpOnLoad": false,
   "about": [
     "It turns out that atoms behave a lot like superballs, and we can, in fact, model an atom by just changing some of the parameters.",
-"Because atoms move so quickly and are so small, the model has been modified so time is slowed down a billion times (otherwise we would just see a blur of motion), and we have to magnify our view by a billion times as well (or the atoms would be too small to see). "
+    "Because atoms move so quickly and are so small, the model has been modified so time is slowed down a billion times (otherwise we would just see a blur of motion), and we have to magnify our view by a billion times as well (or the atoms would be too small to see). "
   ],
+  "theme": "",
+  "showTopBar": true,
+  "showBottomBar": true,
+  "padding": 10,
   "models": [
     {
       "type": "md2d",
       "id": "6M-simple-single",
       "url": "models-converted/atom-superball/6M-simple-single.json",
-      "_not_url": "models-converted/lab-version/1/md2d/sam-activities/intermolecular-attraction/original-interactives-in-pages/page3/page3$1.json",
-      "_not_url": "models-converted/lab-version/1/md2d/sam-activities/intermolecular-attraction/original-interactives-in-pages/page3/6M-simple-single.json",
-      "viewOptions" : {
+      "viewOptions": {
         "controlButtons": "play_reset",
         "textBoxes": []
       }
     }
   ],
-  "components": [],
-  "layout" : {},
-  "i18nMetadata": ""
+  "propertiesToRetain": [],
+  "parameters": [],
+  "outputs": [],
+  "filteredOutputs": [],
+  "helpTips": [],
+  "dataSets": [],
+  "components": [
+    {
+      "type": "slider",
+      "id": "air-friction-slider",
+      "property": "air-friction",
+      "title": "Air Friction",
+      "min": 0,
+      "max": 50,
+      "displayValue": "return 42",
+      "labels": [
+        {
+          "value": 0,
+          "label": "0.0"
+        },
+        {
+          "value": 50,
+          "label": "50.0"
+        }
+      ],
+      "steps": 50,
+      "width": "10em"
+    },
+    {
+      "type": "slider",
+      "id": "gravity-slider",
+      "property": "gravity",
+      "title": "Gravity",
+      "min": 0,
+      "max": 50,
+      "displayValue": "return 42",
+      "labels": [
+        {
+          "value": 0,
+          "label": "0.0"
+        },
+        {
+          "value": 50,
+          "label": "50.0"
+        }
+      ],
+      "steps": 50,
+      "width": "10em"
+    },
+    {
+      "type": "slider",
+      "id": "elasticity-slider",
+      "property": "elasticity",
+      "title": "Elasticity",
+      "min": 0,
+      "max": 50,
+      "displayValue": "return 42",
+      "labels": [
+        {
+          "value": 0,
+          "label": "0.0"
+        },
+        {
+          "value": 50,
+          "label": "50.0"
+        }
+      ],
+      "steps": 50,
+      "width": "10em"
+    }
+  ],
+  "layout": {},
+  "template": "simple"
 }
