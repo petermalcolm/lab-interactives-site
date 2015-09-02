@@ -43,16 +43,16 @@
       "property": "air-friction",
       "title": "Air Friction",
       "min": 0,
-      "max": 50,
-      "displayValue": "return 42",
+      "max": 100,
+      "displayValue": "return 50",
       "labels": [
         {
           "value": 0,
-          "label": "0.0"
+          "label": "none"
         },
         {
-          "value": 50,
-          "label": "50.0"
+          "value": 100,
+          "label": "high"
         }
       ],
       "steps": 50,
@@ -62,45 +62,115 @@
       "type": "slider",
       "id": "gravity-slider",
       "property": "gravity",
-      "title": "Gravity",
+      "title": "Gravitational Field",
       "min": 0,
-      "max": 50,
-      "displayValue": "return 42",
+      "max": 25,
+      "displayValue": "return 2",
       "labels": [
         {
           "value": 0,
-          "label": "0.0"
+          "label": "0"
         },
         {
-          "value": 50,
-          "label": "50.0"
+          "value": 10,
+          "label": "10"
+        },
+        {
+          "value": 25,
+          "label": "25"
         }
       ],
-      "steps": 50,
+      "steps": 25,
       "width": "10em"
     },
     {
       "type": "slider",
       "id": "elasticity-slider",
       "property": "elasticity",
-      "title": "Elasticity",
+      "title": "Elasticity (bounciness)",
       "min": 0,
-      "max": 50,
-      "displayValue": "return 42",
+      "max": 100,
+      "displayValue": "return 85",
       "labels": [
         {
           "value": 0,
-          "label": "0.0"
+          "label": "0%"
         },
         {
-          "value": 50,
-          "label": "50.0"
+          "value": 100,
+          "label": "100%"
         }
       ],
       "steps": 50,
       "width": "10em"
-    }
+    },
+    {
+      "id": "kinetic-energy-graph",
+      "type": "graph",
+      "OPTIONAL-TODO-dataSet": "prediction-dataset",
+      "resetAxesOnReset": false,
+      "enableAutoScaleButton": true,
+      "enableAxisScaling": true,
+      "enableZooming": true,
+      "autoScaleX": true,
+      "autoScaleY": true,
+      "enableSelectionButton": false,
+      "clearSelectionOnLeavingSelectMode": false,
+      "enableDrawButton": true,
+      "drawProperty": null,
+      "markAllDataPoints": false,
+      "showRulersOnSelection": false,
+      "fontScaleRelativeToParent": true,
+      "hideAxisValues": false,
+      "properties": [
+        "prediction"
+      ],
+      "xProperty": [
+        "predictionTime"
+      ],
+      "title": "",
+      "titlePosition": "center",
+      "buttonsStyle": "icons",
+      "buttonsLayout": "vertical",
+      "lineWidth": 2,
+      "width": "18em",
+      "height": "100%",
+      "xlabel": "Time (s)",
+      "xmin": 0,
+      "xmax": 30,
+      "ylabel": "Kinetic Energy",
+      "ymin": 0,
+      "ymax": 40,
+      "xTickCount": 5,
+      "yTickCount": 10,
+      "xscaleExponent": 0.5,
+      "yscaleExponent": 0.5,
+      "xFormatter": ".2s",
+      "yFormatter": ".2s",
+      "lines": true,
+      "bars": false,
+      "tooltip": "",
+      "dataColors": [
+        "#a00000",
+        "#2ca000",
+        "#2c00a0"
+      ],
+      "legendLabels": [],
+      "legendVisible": false,
+      "syncXAxis": false,
+      "syncYAxis": false,
+      "helpIcon": false
+    }    
   ],
-  "layout": {},
+  "layout": {
+    "right" : [
+      "kinetic-energy-graph"
+      ],
+    "bottom" : [
+      "air-friction-slider",
+      "gravity-slider",
+      "elasticity-slider"
+    ]
+  },
   "template": "simple"
 }
