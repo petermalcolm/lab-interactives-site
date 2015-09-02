@@ -42,16 +42,16 @@
       "id": "air-friction-slider",
       "property": "air-friction",
       "title": "Air Friction",
-      "min": 0,
-      "max": 100,
-      "displayValue": "return 50",
+      "min": 0.0,
+      "max": 0.01,
+      "displayValue": "return 0.005",
       "labels": [
         {
-          "value": 0,
+          "value": 0.0,
           "label": "none"
         },
         {
-          "value": 100,
+          "value": 0.01,
           "label": "high"
         }
       ],
@@ -140,7 +140,7 @@
       "xmax": 30,
       "ylabel": "Kinetic Energy",
       "ymin": 0,
-      "ymax": 40,
+      "ymax": 10,
       "xTickCount": 5,
       "yTickCount": 10,
       "xscaleExponent": 0.5,
