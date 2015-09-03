@@ -1,11 +1,11 @@
 {
-  "title": "Table: Moving a bottle with your hand",
+  "title": "Table: Determining the charge on rubbed objects",
   "publicationStatus": "draft",
   "subtitle": "",
   "about": [
-    "Use this table to collect data about your experiment with a charged and uncharged bottle."
+    "Use this table to indicate the charge objects that have been rubbed together have."
   ],
-  "aspectRatio": "2.15",
+  "aspectRatio": "1.8",
   "fontscale": 1.13,
   "models": [
     {
@@ -25,15 +25,16 @@
     {
       "name": "table-dataset",
       "properties": [
-        "Experiment",
-        "Is the bottle charged?",
-        "Is your hand charged?",
-        "Observation: How did your hand and the bottle interact?"
+        "Objects that were rubbed together",
+        "Interaction with positive tape",
+        "Interaction with negative tape",
+        "Charge of rubbed object"
       ],
       "initialData": {
-        "Experiment": ["Bottle not rubbed with fur","Bottle after rubbing with fur"]
+        "Objects that were rubbed together": ["T1 - Teflon rod", "T1 - fur","T2 - glass rod", "T2 - silk", "T2 - plastic bottle", "T3 - fur", "T4 - plastic bottle", "T4 - silk"],
+        "Interaction with positive tape": ["attract", "repel", "repel", "attract", "attract", "repel", "attract", "repel"],
+        "Interaction with negative tape": ["repel", "attract", "attract", "repel", "repel", "attract", "repel", "attract"]
       }
-
     }
   ],
   "components": [
@@ -48,26 +49,29 @@
       "width": "interactive.width",
       "propertyColumns": [
         {
-          "name": "Experiment",
-          "format": "r"
+          "name": "Objects that were rubbed together",
+          "format": "r",
+          "editable": false
         },
         {
-          "name": "Is the bottle charged?",
-          "format": "r"
+          "name": "Interaction with positive tape",
+          "format": "r",
+          "editable": false
         },
         {
-          "name": "Is your hand charged?",
-          "format": "r"
+          "name": "Interaction with negative tape",
+          "format": "r",
+          "editable": false
         },
         {
-          "name": "Observation: How did your hand and the bottle interact?",
+          "name": "Charge of rubbed object",
           "format": "r"
         }
       ]
     },
     {
       "type": "button",
-      "id": "clear-dataset",
+      "id": "reset-dataset",
       "text": "Reset table",
       "action": "resetDataSet('table-dataset');"
     }
@@ -92,6 +96,6 @@
   ],
   "layout": {
     "above": ["table1"],
-    "below": ["clear-dataset"]
+    "below": ["reset-dataset"]
   }
 }
