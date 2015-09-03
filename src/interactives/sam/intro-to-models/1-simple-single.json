@@ -31,7 +31,13 @@
     }
   ],
   "propertiesToRetain": [],
-  "parameters": [],
+  "parameters": [
+    {
+      "name": "customFriction",
+      "initialValue": 0.001,
+      "onChange" : "setAtomProperties(0,{friction:value})"
+    }
+  ],
   "outputs": [],
   "filteredOutputs": [],
   "helpTips": [],
@@ -40,11 +46,11 @@
     {
       "type": "slider",
       "id": "air-friction-slider",
-      "property": "air-friction",
+      "property": "customFriction",
       "title": "Air Friction",
       "min": 0.0,
       "max": 0.01,
-      "displayValue": "return 0.005",
+      "displayValue": "return format('.4f')(value)",
       "labels": [
         {
           "value": 0.0,
